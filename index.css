@@ -32,9 +32,3 @@ input {
  color: #444;
  font-weight: 300;
 }
-$(document).ready(function() {
- $("#search").keyup(function() {
- ...
- });
-});
-var albums = $(".album");
