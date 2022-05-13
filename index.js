@@ -1,27 +1,65 @@
-...
-$(document).ready(function() {
- $("#search").keyup(function() {
- ...
- });
-});
-var albums = $(".album");
-$(albums).show();
-albums.each(function(){
- if($(this).text().toLocaleLowerCase().search(searchTerm) == -1) {
- $(this).hide();
- }
-});
-…
-<body>
- <div class="pagecontent">
- <h1>Albums <input id="search" type="text" placeholder="Search"/></h1>
- <div class="line"></div>
- <div class="album">
-…
- </div>
- <div class="album">
-…
- </div>
- …
- </div>
-</body>
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.pagecontent {
+    width: 98%;
+    padding: 1%;
+    max-width: 960px;
+    margin: auto;
+}
+h1{
+    font-weight: 300;
+    font-size: 48pt;
+}
+ol{
+    margin: 0px;
+}
+.line{
+    width: 100%;
+    border-bottom: 2px solid #4C4C4C;
+}
+.line.light{
+    border-bottom: 1px solid #626262;
+}
+.image-wrapper{
+    width: 25%;
+    float: left;
+}
+.cover-image{
+    max-width: 150px;
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+.text-wrapper{
+    width: 74%;
+    float: right;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.text-wrapper ol{
+    margin-top: 20px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+.clear{
+    clear: both;
+}
+.label-info{
+    margin-top: 20px;
+    color: #999;
+    font-style: italic;
+}
+input {
+    border: 0px;
+    background-color: transparent;
+    font-size: 48pt;
+    width: 600px;
+    font-family: "Helvetica Neue";
+    color: #444;
+    font-weight: 300;
+}
+   
