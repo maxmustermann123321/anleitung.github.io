@@ -1,34 +1,55 @@
-…
-.image-wraper {
- width: 25%;
- float: left;
-}
-.cover-image {
- max-width: 150px;
- width: 90%;
- padding: 5%;
- margin: auto;
- margin-top: 20px;
-display: block;
-}
-.text-wraper {
- width: 74%;
- float: right;
- margin-top: 20px;
- padding-bottom: 20px;
-}
-.clear{
- clear: both;
-}
-.line.light {
- border-bottom: 1px solid #626262;
-}
-input {
- border: 0px;
- background-color: transparent;
- font-size: 48pt;
- width: 600px;
- font-family: "Helvetica Neue";
- color: #444;
- font-weight: 300;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="pagecontent">
+        <h1>Albums <input id="search" type="text" placeholder="Search"/></h1>
+        <div class="line"></div>
+    </div>
+    <div class="album">
+        <div class="image-wrapper">
+            <img class="cover-image" src="https://knucklebonz.com/wp-content/uploads/2018/06/PINK-WYWH-albumart-1080.jpg"/>
+        </div>
+        <div class="text-wrapper">
+            <h2><b>Pink Floyd</b> Wish you were here</h2>
+            <ol>
+                <li>Shine On You Crazy Diamond (Parts I-V)</li>
+                <li>Welcome to the Machine</li>
+                <li>Have a Cigar</li>
+                <li>Wish You Were Here</li>
+                <li>Shine On You Crazy Diamond (Parts VI–IX)</li>
+            </ol>
+            <span class="label-info">1975 Harvest Records</span>
+        </div>
+        <div class="clear"></div>
+        <div class="line light"></div>   
+    </div>
+    <div class="album">
+        <div class="image-wrapper">
+            <img class="cover-image" src="https://knucklebonz.com/wp-content/uploads/2018/06/PINK-WYWH-albumart-1080.jpg"/>
+        </div>
+        <div class="text-wrapper">
+            <h2><b>Test</b> XY</h2>
+            <ol>
+                <li>Shine On You Crazy Diamond (Parts I-V)></li>
+                <li>Welcome to the Machine</li>
+                <li>Have a Cigar</li>
+                <li>Wish You Were Here</li>
+                <li>Shine On You Crazy Diamond (Parts VI–IX)</li>
+            </ol>
+            <span class="label-info">1975 Harvest Records</span>
+        </div>
+        <div class="clear"></div>
+        <div class="line light"></div>   
+    </div>
+
+</body>
+</html>
